@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="platter.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="featured-products-section py-8 flex justify-center items-center overflow-x-hidden">
+        <div class="prod-container mx-auto w-full sm:w-[85%]">
+            <div class="featured-prod-title-container flex justify-between items-center mb-10">
+                <h2 class="featured-prod-title font-serif text-4xl text-[#231F20]" 
+                    style="font-family: 'Source Serif 4', serif; font-weight: 900; font-size: 40px; line-height: 120%; letter-spacing: -1%;">
+                    Best Sellers
+                </h2>
+                <a href="/collections/best-sellers" class="featured-top-div flex gap-2 items-center no-underline">
+                    <span class="shop-all-label font-poppins text-sm text-center text-[#5C553A]" 
+                        style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 140%; letter-spacing: 3%; text-align: center;">
+                        Shop All Best Sellers
+                    </span>
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/Icon.svg?v=1742531156" width="13" height="10" alt="">
+                </a>
+            </div>
+            <div class="products-grid flex flex-nowrap gap-5 overflow-x-scroll pb-9 w-screen pr-64" id="products-grid">
+                <a href="/product-1" class="product-card flex-1 rounded-lg p-4 cursor-pointer no-underline text-inherit">
+                    <div class="product-image-container relative">
+                        <div class="best-seller-label absolute bg-white text-black font-poppins font-semibold text-xs px-2.5 py-1 rounded-full border border-black z-10 ml-2 mt-1 font-bebas text-[10px] leading-[100%] tracking-[6%] text-center">Best Sellers</div> 
+                        <div class="product-images relative">
+                            <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/pim.jpg?v=1742528567" alt="Product 1" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-main">
+                            <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/pum.jpg?v=1742528589" alt="Product 1 Hover" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-hover opacity-0">
+                        </div>
+                    </div>
+                    <div class="product-details flex flex-col gap-4 mt-6">
+                        <h3 class="prod-title font-bebas text-lg text-black m-0" style="font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 18px; line-height: 100%; letter-spacing: 3%; text-transform: uppercase;">
+                            Product 1
+                        </h3> 
+                        <div class="prod-review-div flex items-center gap-1">
+                            <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/stars.svg?v=1742565163" width="68" height="12" alt="">
+                            <span class="text-gray-500 text-xs" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0%; color: rgba(112, 112, 112, 1);">1234 Reviews</span>
+                        </div>
+                        <p class="product-price font-poppins font-medium text-base uppercase m-0 text-black" 
+                        style="font-size: 16px; line-height: 100%; letter-spacing: 0%;">
+                            $100.00
+                        </p>
+                    </div>
+                </a>
+                
+                <a href="/product-2" class="product-card flex-1 rounded-lg p-4 cursor-pointer no-underline text-inherit">
+                    <div class="product-image-container relative">
+                        <div class="best-seller-label absolute bg-white text-black font-poppins font-semibold text-xs px-2.5 py-1 rounded-full border border-black z-10 ml-2 mt-1 font-bebas text-[10px] leading-[100%] tracking-[6%] text-center">Best Sellers</div> 
+                        <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/puma1.jpg?v=1742528699" alt="Product 2" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-main">
+                        <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/puma2.jpg?v=1742528699" alt="Product 1 Hover" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-hover opacity-0">
+                    </div>
+                    <div class="product-details flex flex-col gap-4 mt-6">
+                        <h3 class="prod-title font-bebas text-lg text-black m-0" style="font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 18px; line-height: 100%; letter-spacing: 3%; text-transform: uppercase;">
+                            Product 2
+                        </h3> 
+                        <div class="prod-review-div flex items-center gap-1">
+                            <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/stars.svg?v=1742565163" width="68" height="12" alt="">
+                            <span class="text-gray-500 text-xs" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0%; color: rgba(112, 112, 112, 1);">1234 Reviews</span>
+                        </div>
+                        <p class="product-price font-poppins font-medium text-base uppercase m-0 text-black" 
+                        style="font-size: 16px; line-height: 100%; letter-spacing: 0%;">
+                            $200.00
+                        </p>
+                    </div>
+                </a>
+                <a href="/product-3" class="product-card flex-1 rounded-lg p-4 cursor-pointer no-underline text-inherit">
+                    <div class="product-image-container relative">
+                        <div class="best-seller-label absolute bg-white text-black font-poppins font-semibold text-xs px-2.5 py-1 rounded-full border border-black z-10 ml-2 mt-1 font-bebas text-[10px] leading-[100%] tracking-[6%] text-center">Best Sellers</div> 
+                        <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/nikesh.jpg?v=1742528776" alt="Product 3" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-main">
+                        <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/niek.jpg?v=1742528786" alt="Product 1 Hover" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-hover opacity-0">
+                    </div>
+                    <div class="product-details flex flex-col gap-4 mt-6">
+                        <h3 class="prod-title font-bebas text-lg text-black m-0" style="font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 18px; line-height: 100%; letter-spacing: 3%; text-transform: uppercase;">
+                            Product 3
+                        </h3> 
+                        <div class="prod-review-div flex items-center gap-1">
+                            <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/stars.svg?v=1742565163" width="68" height="12" alt="">
+                            <span class="text-gray-500 text-xs" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0%; color: rgba(112, 112, 112, 1);">1234 Reviews</span>
+                        </div>
+                        <p class="product-price font-poppins font-medium text-base uppercase m-0 text-black" 
+                        style="font-size: 16px; line-height: 100%; letter-spacing: 0%;">
+                            $300.00
+                        </p>
+                    </div>
+                </a>
+                            <a href="/product-4" class="product-card flex-1 rounded-lg p-4 cursor-pointer no-underline text-inherit">
+                <div class="product-image-container relative">
+                    <div class="best-seller-label absolute bg-white text-black font-poppins font-semibold text-xs px-2.5 py-1 rounded-full border border-black z-10 ml-2 mt-1 font-bebas text-[10px] leading-[100%] tracking-[6%] text-center">Best Sellers</div> 
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/Pumashoes3.jpg?v=1742528848" alt="Product 3" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-main">
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/d.jpg?v=1742528860" alt="Product 1 Hover" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-hover opacity-0">
+
+                </div>
+                <div class="product-details flex flex-col gap-4 mt-6">
+                    <h3 class="prod-title font-bebas text-lg text-black m-0" style="font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 18px; line-height: 100%; letter-spacing: 3%; text-transform: uppercase;">
+                        Product 4
+                    </h3> 
+                    <div class="prod-review-div flex items-center gap-1">
+                        <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/stars.svg?v=1742565163" width="68" height="12" alt="">
+                        <span class="text-gray-500 text-xs" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0%; color: rgba(112, 112, 112, 1);">1234 Reviews</span>
+                    </div>
+                    <p class="product-price font-poppins font-medium text-base uppercase m-0 text-black" 
+                    style="font-size: 16px; line-height: 100%; letter-spacing: 0%;">
+                        $300.00
+                    </p>
+                </div>
+            </a>
+            <a href="/product-5" class="product-card flex-1 rounded-lg p-4 cursor-pointer no-underline text-inherit">
+                <div class="product-image-container relative">
+                    <div class="best-seller-label absolute bg-white text-black font-poppins font-semibold text-xs px-2.5 py-1 rounded-full border border-black z-10 ml-2 mt-1 font-bebas text-[10px] leading-[100%] tracking-[6%] text-center">Best Sellers</div> 
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/ms.jpg?v=1742528953" alt="Product 3" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-main">
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/Puma_s.jpg?v=1742528957" alt="Product 1 Hover" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-hover opacity-0">
+                </div>
+                <div class="product-details flex flex-col gap-4 mt-6">
+                    <h3 class="prod-title font-bebas text-lg text-black m-0" style="font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 18px; line-height: 100%; letter-spacing: 3%; text-transform: uppercase;">
+                        Product 5
+                    </h3> 
+                    <div class="prod-review-div flex items-center gap-1">
+                        <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/stars.svg?v=1742565163" width="68" height="12" alt="">
+                        <span class="text-gray-500 text-xs" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0%; color: rgba(112, 112, 112, 1);">1234 Reviews</span>
+                    </div>
+                    <p class="product-price font-poppins font-medium text-base uppercase m-0 text-black" 
+                    style="font-size: 16px; line-height: 100%; letter-spacing: 0%;">
+                        $300.00
+                    </p>
+                </div>
+            </a>
+            <a href="/product-6" class="product-card flex-1 rounded-lg p-4 cursor-pointer no-underline text-inherit">
+                <div class="product-image-container relative">
+                    <div class="best-seller-label absolute bg-white text-black font-poppins font-semibold text-xs px-2.5 py-1 rounded-full border border-black z-10 ml-2 mt-1 font-bebas text-[10px] leading-[100%] tracking-[6%] text-center">Best Sellers</div> 
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/6.jpg?v=1742529926" alt="Product 3" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-main">
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/6p.jpg?v=1742529926" alt="Product 1 Hover" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-hover opacity-0">
+                </div>
+                <div class="product-details flex flex-col gap-4 mt-6">
+                    <h3 class="prod-title font-bebas text-lg text-black m-0" style="font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 18px; line-height: 100%; letter-spacing: 3%; text-transform: uppercase;">
+                        Product 6
+                    </h3> 
+                    <div class="prod-review-div flex items-center gap-1">
+                        <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/stars.svg?v=1742565163" width="68" height="12" alt="">
+                        <span class="text-gray-500 text-xs" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0%; color: rgba(112, 112, 112, 1);">1234 Reviews</span>
+                    </div>
+                    <p class="product-price font-poppins font-medium text-base uppercase m-0 text-black" 
+                    style="font-size: 16px; line-height: 100%; letter-spacing: 0%;">
+                        $300.00
+                    </p>
+                </div>
+            </a>
+            <a href="/product-7" class="product-card flex-1 rounded-lg p-4 cursor-pointer no-underline text-inherit">
+                <div class="product-image-container relative">
+                    <div class="best-seller-label absolute bg-white text-black font-poppins font-semibold text-xs px-2.5 py-1 rounded-full border border-black z-10 ml-2 mt-1 font-bebas text-[10px] leading-[100%] tracking-[6%] text-center">Best Sellers</div> 
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/ojjo.jpg?v=1742532824" alt="Product 3" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-main">
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/l.jpg?v=1742532858" alt="Product 1 Hover" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-hover opacity-0">
+                </div>
+                <div class="product-details flex flex-col gap-4 mt-6">
+                    <h3 class="prod-title font-bebas text-lg text-black m-0" style="font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 18px; line-height: 100%; letter-spacing: 3%; text-transform: uppercase;">
+                        Product 7
+                    </h3> 
+                    <div class="prod-review-div flex items-center gap-1">
+                        <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/stars.svg?v=1742565163" width="68" height="12" alt="">
+                        <span class="text-gray-500 text-xs" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0%; color: rgba(112, 112, 112, 1);">1234 Reviews</span>
+                    </div>
+                    <p class="product-price font-poppins font-medium text-base uppercase m-0 text-black" 
+                    style="font-size: 16px; line-height: 100%; letter-spacing: 0%;">
+                        $300.00
+                    </p>
+                </div>
+            </a>
+            <a href="/product-8" class="product-card flex-1 rounded-lg p-4 cursor-pointer no-underline text-inherit">
+                <div class="product-image-container relative">
+                    <div class="best-seller-label absolute bg-white text-black font-poppins font-semibold text-xs px-2.5 py-1 rounded-full border border-black z-10 ml-2 mt-1 font-bebas text-[10px] leading-[100%] tracking-[6%] text-center">Best Sellers</div> 
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/lolq.jpg?v=1742530124" alt="Product 3" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-main">
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/lol.jpg?v=1742530124" alt="Product 1 Hover" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-hover opacity-0">
+                </div>
+                <div class="product-details flex flex-col gap-4 mt-6">
+                    <h3 class="prod-title font-bebas text-lg text-black m-0" style="font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 18px; line-height: 100%; letter-spacing: 3%; text-transform: uppercase;">
+                        Product 8
+                    </h3> 
+                    <div class="prod-review-div flex items-center gap-1">
+                        <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/stars.svg?v=1742565163" width="68" height="12" alt="">
+                        <span class="text-gray-500 text-xs" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0%; color: rgba(112, 112, 112, 1);">1234 Reviews</span>
+                    </div>
+                    <p class="product-price font-poppins font-medium text-base uppercase m-0 text-black" 
+                    style="font-size: 16px; line-height: 100%; letter-spacing: 0%;">
+                        $300.00
+                    </p>
+                </div>
+            </a>
+            <a href="/product-9" class="product-card flex-1 rounded-lg p-4 cursor-pointer no-underline text-inherit">
+                <div class="product-image-container relative">
+                    <div class="best-seller-label absolute bg-white text-black font-poppins font-semibold text-xs px-2.5 py-1 rounded-full border border-black z-10 ml-2 mt-1 font-bebas text-[10px] leading-[100%] tracking-[6%] text-center">Best Sellers</div> 
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/9s.jpg?v=1742530285" alt="Product 3" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-main">
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/9.jpg?v=1742530285" alt="Product 1 Hover" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-hover opacity-0">
+                </div>
+                <div class="product-details flex flex-col gap-4 mt-6">
+                    <h3 class="prod-title font-bebas text-lg text-black m-0" style="font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 18px; line-height: 100%; letter-spacing: 3%; text-transform: uppercase;">
+                        Product 9
+                    </h3> 
+                    <div class="prod-review-div flex items-center gap-1">
+                        <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/stars.svg?v=1742565163" width="68" height="12" alt="">
+                        <span class="text-gray-500 text-xs" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0%; color: rgba(112, 112, 112, 1);">1234 Reviews</span>
+                    </div>
+                    <p class="product-price font-poppins font-medium text-base uppercase m-0 text-black" 
+                    style="font-size: 16px; line-height: 100%; letter-spacing: 0%;">
+                        $300.00
+                    </p>
+                </div>
+            </a>
+            <a href="/product-10" class="product-card flex-1 rounded-lg p-4 cursor-pointer no-underline text-inherit">
+                <div class="product-image-container relative">
+                    <div class="best-seller-label absolute bg-white text-black font-poppins font-semibold text-xs px-2.5 py-1 rounded-full border border-black z-10 ml-2 mt-1 font-bebas text-[10px] leading-[100%] tracking-[6%] text-center">Best Sellers</div> 
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/8.jpg?v=1742530196" alt="Product 3" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-main">
+                    <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/slsls.jpg?v=1742530201" alt="Product 1 Hover" class="product-image max-w-[355px] min-h-[355px] object-cover rounded-lg cursor-pointer product-image-hover opacity-0">
+                </div>
+                <div class="product-details flex flex-col gap-4 mt-6">
+                    <h3 class="prod-title font-bebas text-lg text-black m-0" style="font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 18px; line-height: 100%; letter-spacing: 3%; text-transform: uppercase;">
+                        Product 10
+                    </h3> 
+                    <div class="prod-review-div flex items-center gap-1">
+                        <img src="https://cdn.shopify.com/s/files/1/0748/2939/8260/files/stars.svg?v=1742565163" width="68" height="12" alt="">
+                   <span class="text-gray-500 text-xs" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0%; color: rgba(112, 112, 112, 1);">1234 Reviews</span>
+                    </div>
+                    <p class="product-price font-poppins font-medium text-base uppercase m-0 text-black" 
+                    style="font-size: 16px; line-height: 100%; letter-spacing: 0%;">
+                        $300.00
+                    </p>
+                </div>
+            </a>
+            </div>
+            <div class="show-more-container w-full sm:w-[90%] flex justify-center mt-7 mb-7">
+                <button id="toggle-more" class="block md:hidden mt-4 px-4 py-2 bg-blue-500 text-white rounded-full w-full min-h-[54px] text-center font-poppins font-normal text-base leading-[140%] tracking-[3%]">Show More</button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    @media(max-width: 768px) {
+        .prod-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 90%;
+            overflow-x: hidden;
+            margin: 0;
+            justify-content: center;
+            padding-right: 0px;
+        }
+
+        .product-details{
+            margin-top: 10px;
+        }
+
+        .product-card {
+            flex: 1 1 calc(50% - 20px); 
+        }
+
+        .product-image {
+            min-width: 158px;
+            max-width: 100%;
+            min-width: 158px;
+            min-height: 159px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .product-image-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+            min-width: 158px;
+            min-height: 159px;
+            object-fit: cover;
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .featured-top-div {
+            display: none;
+        }
+
+        .featured-prod-title-container {
+            justify-content: center;
+        }
+
+        .featured-prod-title {
+            font-size: 28px;
+        }
+
+        .show-more-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            max-width: 90%;
+        }
+
+        #toggle-more {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: 3%;
+            width: 100%;
+            min-height: 54px;
+            color: white;
+            text-align: center;
+            background-color: black;
+            border-radius: 100px;
+        }
+
+        .prod-title {
+            font-size: 16px;
+        }
+
+        .prod-review-div span {
+            font-size: 11px;
+        }
+    }
+
+        .product-image {
+        transition: opacity 0.3s ease-in-out;
+        }
+        .product-image-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        }
+        .product-image-main {
+        transition: opacity 0.3s ease-in-out;
+        }
+
+    </style>
+</body>
+</html>
